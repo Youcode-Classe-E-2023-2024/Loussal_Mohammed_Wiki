@@ -13,9 +13,6 @@ on:
     types:
       - submitted
       - dismissed
-  push:
-    branches:
-      - main
 
 jobs:
   manageIssueStatus:
@@ -39,7 +36,7 @@ jobs:
             LABEL="Backlog"
             ;;
           "synchronize")
-            LABEL="In Progress"
+            LABEL="Ready"
             ;;
           "review_requested")
             LABEL="In Review"
@@ -55,11 +52,6 @@ jobs:
             LABEL=""
             ;;
         esac
-
-        # Add the "Ready" label when a new branch is created
-        if [ "$ACTION_TYPE" == "opened" ] && [ "$PULL_REQUEST_STATE" == "open" ]; then
-          LABEL="Ready"
-        fi
 
         # Update the issue label if a valid label is defined
         if [ "$LABEL" != "" ]; then
