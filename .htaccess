@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} !^/Loussal_Mohammed_Wiki/assets/ [OR]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ index.php [L]
+
+<ifModule mod_rewrite.c>
+    RewriteRule ^Lossal_Mohammed_Wiki/assets/ - [L]
+</ifModule>
