@@ -72,5 +72,27 @@ class Validation
         return false;
     }
 
-    
+    static function pictureValidation($fileName)
+    {
+        if (!$fileName) {
+            return "No picture selected. Please select an image! ";
+        }
+        return false;
+    }
+
+    static function handleFileUpload()
+    {
+        if (array_key_exists("user_picture", $_FILES)) {
+            $targetDir = "./assets/img/";
+            $fileName = basename($_FILES["user_picture"]["name"]);
+            $targetFilePath = $targetDir . $fileName;
+            $fileType = strtolower(pathinfo($targetFilePath, PATHINFO_EXTENSION));
+
+            // File upload logic (e.g., file type and size validation)
+            if (move_uploaded_file($_FILES["user_picture"]["tmp_name"], $targetFilePath)) {
+                return $fileName;
+            }
+        }
+        return false;
+    }
 }
