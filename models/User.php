@@ -34,7 +34,13 @@ class User
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
+    static function getAll()
+    {
+        global $db;
+        $stmt = $db->query("SELECT * FROM users");
+        if ($stmt)
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 
-    
     
 }
