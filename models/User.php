@@ -42,5 +42,31 @@ class User
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    
+    function login ($user_id, $access) {
+        if($access === "dashboard")
+            $_SESSION["admin"] = true;
+        $_SESSION["user_id"] = $user_id;
+        $_SESSION["login"] = true;
+    }
+
+    function logout () {
+        session_destroy();
+        header('Location: index.php');
+    }
+
+    static function user_checker($email, $db)
+    {
+        $sql = "SELECT * FROM users WHERE email = :email";
+        $stmt = $db->prepare($sql);
+        $stmt->bindParam(':email', $email);
+        $stmt->execute();
+
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if ($result)
+            return $result;
+        return false;
+    }
+
+     
 }
