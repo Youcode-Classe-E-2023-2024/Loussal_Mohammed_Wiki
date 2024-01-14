@@ -58,6 +58,17 @@ class Wiki
         $stmt->execute();
     }
 
-    
+    static function getWikis()
+    {
+        global $db;
+        $sql = "SELECT * FROM wiki 
+         JOIN category 
+         ON wiki.cat_id = category.category_id
+         WHERE archived = 0 ORDER BY wiki.created_at DESC ";
+        $stmt = $db->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
+
     
 }
