@@ -49,6 +49,15 @@ class Wiki
         $stmt->execute();
     }
 
+    static function archiveWiki($wiki_id)
+    {
+        global $db;
+        $sql = "UPDATE wiki SET archived=1 WHERE wiki_id = :wiki_id";
+        $stmt = $db->prepare($sql);
+        $stmt->bindParam(':wiki_id', $wiki_id);
+        $stmt->execute();
+    }
+
     
     
 }
