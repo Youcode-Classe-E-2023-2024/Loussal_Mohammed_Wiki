@@ -24,6 +24,9 @@ $tags = Tag::getTags();
 /*------------*/
 // en-tant-quadministrateur-je-veux-gérer-les-tags
 /*------------*/
+/*------------*/
+// en-tant-quadministrateur-je-souhaite-pouvoir-gérer-les-wikis
+/*------------*/
 if (isset($_POST["create_wiki"])) {
     extract($_POST);
     $picture = Validation::handleFileUpload();
@@ -74,6 +77,9 @@ if (isset($_GET["req"]) && $_GET["req"] == "search_bar") {
         /*------------*/
 // en-tant-quadministrateur-je-veux-gérer-les-tags
 /*------------*/
+/*------------*/
+// en-tant-quadministrateur-je-souhaite-pouvoir-gérer-les-wikis
+/*------------*/
         $wikiTags = Tag::get_wiki_tag($data["wiki_id"]);
 
         $searchArray[] = [
@@ -83,6 +89,9 @@ if (isset($_GET["req"]) && $_GET["req"] == "search_bar") {
     }
     echo json_encode($searchArray);
     exit;
+    /*------------*/
+// en-tant-quadministrateur-je-souhaite-pouvoir-gérer-les-wikis
+/*------------*/
     /*------------*/
 // en-tant-quadministrateur-je-veux-gérer-les-tags
 /*------------*/
