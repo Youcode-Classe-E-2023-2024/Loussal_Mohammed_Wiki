@@ -25,5 +25,15 @@ class Validation
         return false;
     }
     
+    static function validateCategory($category)
+    {
+        if (empty($category)) {
+            return "Category is required";
+        } elseif (!preg_match('/^[a-zA-Z0-9]{3,}$/', $category)) {
+            return "Invalid category. Category should be at least 3 characters long.";
+        } elseif (Category::CheckCategory( $category))
+        return false;
+    }
 
+    
 }
