@@ -70,5 +70,20 @@ class Wiki
         return $stmt->fetchAll();
     }
 
+    static function lastWikis()
+    {
+        global $db;
+        $result = $db->query("SELECT *
+        FROM wiki
+        JOIN category 
+        ON wiki.cat_id = category.category_id
+        WHERE archived = 0
+        ORDER BY wiki.created_at DESC
+        LIMIT 5;
+        ");
+        return $result->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    
     
 }
