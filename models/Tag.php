@@ -1,4 +1,7 @@
 <?php
+/*------------*/
+// en-tant-quadministrateur-je-veux-gérer-les-tags
+/*------------*/
 class Tag {
     static function addTag($tag) {
         global $db;
@@ -87,3 +90,6 @@ class Tag {
         return $stmt->fetchAll();
     }
 }
+/*------------*/
+// en-tant-quadministrateur-je-veux-gérer-les-tags
+/*------------*/
