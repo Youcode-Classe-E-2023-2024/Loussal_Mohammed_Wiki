@@ -52,5 +52,25 @@ class Validation
         return false;
     }
 
+    static function validateEmail($email)
+    {
+        if (empty($email)) {
+            return "Email is required";
+        } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            return "Invalid email format.";
+        }
+        return false;
+    }
+
+    static function validatePassword($password)
+    {
+        if (empty($password)) {
+            return "Password is required";
+        } elseif (!preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/', $password)) {
+            return "Invalid password. Password should have at least 8 characters, including one uppercase letter, one lowercase letter, and one number.";
+        }
+        return false;
+    }
+
     
 }
