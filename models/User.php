@@ -1,5 +1,7 @@
 <?php
-
+/*------------*/
+// en-tant-quauteur-inscrit-je-souhaite-me-connecter-à-mon-compte
+/*------------*/
 class User
 {
     public $id;
@@ -94,3 +96,6 @@ class User
    
             
 }
+/*------------*/
+// en-tant-quauteur-inscrit-je-souhaite-me-connecter-à-mon-compte
+/*------------*/

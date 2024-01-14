@@ -1,5 +1,7 @@
 <?php
-
+/*------------*/
+// en-tant-quadministrateur-je-souhaite-pouvoir-gérer-les-wikis
+/*------------*/
 class Wiki
 {
     static function addWiki($title, $content,$picture, $tags, $category, $creator)
@@ -116,3 +118,6 @@ class Wiki
     }
     
 }
+/*------------*/
+// en-tant-quadministrateur-je-souhaite-pouvoir-gérer-les-wikis
+/*------------*/
