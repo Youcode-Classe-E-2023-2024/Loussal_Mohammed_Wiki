@@ -26,7 +26,13 @@ if (isset($_GET["wiki_id"])) {
 // en-tant-quadministrateur-je-veux-gérer-les-tags
 /*------------*/
 $allTags = Tag::getTags();
+/*------------*/
+// en-tant-quadministrateur-je-veux-gérer-les-catégories
+/*------------*/
 $categories = category::getCategories();
+/*------------*/
+// en-tant-quadministrateur-je-veux-gérer-les-catégories
+/*------------*/
 
 if (isset($_POST["create_wiki"])) {
     extract($_POST);
