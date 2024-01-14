@@ -16,12 +16,18 @@ if (isset($_GET["wikiId"])) {
     header("location: index.php?page=home");
 }
 
+/*------------*/
+// en-tant-quadministrateur-je-souhaite-pouvoir-gérer-les-wikis
+/*------------*/
 if (isset($_GET["wiki_id"])) {
     $wikiId = $_GET["wiki_id"];
     $singleWiki = Wiki::getWiki($wikiId);
 //    dd($singleWiki);
     $tags = Tag::get_wiki_tag($wikiId);
 }
+/*------------*/
+// en-tant-quadministrateur-je-souhaite-pouvoir-gérer-les-wikis
+/*------------*/
 /*------------*/
 // en-tant-quadministrateur-je-veux-gérer-les-tags
 /*------------*/
