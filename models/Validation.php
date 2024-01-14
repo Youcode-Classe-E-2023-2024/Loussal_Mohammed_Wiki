@@ -35,5 +35,22 @@ class Validation
         return false;
     }
 
+    static function userChecker($email, $db)
+    {
+        if (User::user_checker($email, $db)) {
+            return "User already exists";
+        }
+    }
+
+    static function validatePhoneNumber($phoneNumber)
+    {
+        if (empty($phoneNumber)) {
+            return "Phone number is required";
+        } elseif (!preg_match('/^[0-9]{10}$/', $phoneNumber)) {
+            return "Invalid phone number. Phone number should have 10 digits.";
+        }
+        return false;
+    }
+
     
 }
