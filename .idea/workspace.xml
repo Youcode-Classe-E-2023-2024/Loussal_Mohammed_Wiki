@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="79fa3a78-62bc-4405-9e09-17be8e6cd12a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/controllers/wiki_controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Search.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Tag.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Wiki.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Loussal_Mohammed_Wiki.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/authentification/authentication.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/authentification/authentication_theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/authentification/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/authentification/fontawesome-all.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/graphic1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/graphic2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/graphic3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/graphic4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/graphic5.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/graphic6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/graphic7.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/graphic8.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/img3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/img4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/logo-dark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/logo-dark2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/logo-grey.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/logo-light.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/authentification/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/authentification/cleave.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/authentification/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/authentification/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/authentification/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scripts/5c5dd728/cloudflare-static/email-decode.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-brands-400d41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-regular-400d41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-solid-900d41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/home_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/home_controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/register_controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/home_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/authentication_controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/register_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/dashboard_controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/_layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/_layout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/register_view.php" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "node.js.selected.package.tslint": "(autodetect)"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mongo",
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Loussal_Mohammed_Wiki\assets\css\authentification" />
+      <recent name="C:\xampp\htdocs\Loussal_Mohammed_Wiki" />
+    </key>
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+</project>
