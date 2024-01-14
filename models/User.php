@@ -68,5 +68,16 @@ class User
         return false;
     }
 
-     
+    static function register($username, $email, $password, $picture, $db)
+    {
+        $sql = "INSERT INTO users (username, email, password, user_picture) VALUES (:username, :email, :password, :picture)";
+        $stmt = $db->prepare($sql);
+        $stmt->bindParam(':username', $username);
+        $stmt->bindParam(':email', $email);
+        $stmt->bindParam(':password', $password);
+        $stmt->bindParam(':picture', $picture);
+        $stmt->execute();
+    }
+
+            
 }
