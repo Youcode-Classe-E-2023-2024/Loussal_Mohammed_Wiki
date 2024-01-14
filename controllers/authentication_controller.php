@@ -1,6 +1,8 @@
 <?php
 
-
+/*------------*/
+// en-tant-quauteur-inscrit-je-souhaite-me-connecter-à-mon-compte
+/*------------*/
 global $db;
 
 if (isset($_POST["req"]) && $_POST["req"] == "signup") {
@@ -56,3 +58,6 @@ if (isset($_POST["req"]) && $_POST["req"] == "login") {
     exit;
 }
 
+/*------------*/
+// en-tant-quauteur-inscrit-je-souhaite-me-connecter-à-mon-compte
+/*------------*/
