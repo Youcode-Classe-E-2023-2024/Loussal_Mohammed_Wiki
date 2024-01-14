@@ -103,6 +103,16 @@ class Wiki
         return $stmt->fetchAll();
     }
 
-    
+    static function getWiki($wikiId)
+    {
+        global $db;
+        $sql = "SELECT wiki.*, users.username, users.user_picture, users.email, category.category FROM wiki 
+         JOIN users ON wiki.creator = users.user_id
+         JOIN category ON wiki.category_id = category.category_id
+         WHERE archived = 0 AND wiki_id = ? ORDER BY wiki_id DESC";
+        $stmt = $db->prepare($sql);
+        $stmt->execute([$wikiId]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
     
 }
