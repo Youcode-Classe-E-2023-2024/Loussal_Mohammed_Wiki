@@ -1,4 +1,7 @@
 <?php
+/*------------*/
+// en-tant-quadministrateur-je-veux-gérer-les-catégories
+/*------------*/
 class Category {
     static function addCategory($category) {
         global $db;
@@ -46,3 +49,6 @@ class Category {
         return false;
     }
 }
+/*------------*/
+// en-tant-quadministrateur-je-veux-gérer-les-catégories
+/*------------*/

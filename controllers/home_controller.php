@@ -10,11 +10,20 @@ if (isset($_POST['logout'])) {
     $logout->logout();
 }
 //dd($_SESSION["admin"]);
-
+/*------------*/
+// en-tant-quadministrateur-je-veux-gérer-les-catégories
+/*------------*/
 $categories = category::getCategories();
-
+/*------------*/
+// en-tant-quadministrateur-je-veux-gérer-les-catégories
+/*------------*/
+/*------------*/
+// en-tant-quadministrateur-je-veux-gérer-les-tags
+/*------------*/
 $tags = Tag::getTags();
-
+/*------------*/
+// en-tant-quadministrateur-je-veux-gérer-les-tags
+/*------------*/
 if (isset($_POST["create_wiki"])) {
     extract($_POST);
     $picture = Validation::handleFileUpload();
@@ -25,7 +34,13 @@ if (isset($_POST["create_wiki"])) {
 
 $wikis = Wiki::getWikis();
 $lastWiki = Wiki::lastWikis();
+/*------------*/
+// en-tant-quadministrateur-je-veux-gérer-les-catégories
+/*------------*/
 $lastCategories = Wiki::lasCategories();
+/*------------*/
+// en-tant-quadministrateur-je-veux-gérer-les-catégories
+/*------------*/
 
 if (isset($_GET["wiki_archive"])) {
     $wiki_id = $_GET["wiki_archive"];
@@ -56,6 +71,9 @@ if (isset($_GET["req"]) && $_GET["req"] == "search_bar") {
     $searchArray = [];
 
     foreach ($searchedData as $data) {
+        /*------------*/
+// en-tant-quadministrateur-je-veux-gérer-les-tags
+/*------------*/
         $wikiTags = Tag::get_wiki_tag($data["wiki_id"]);
 
         $searchArray[] = [
@@ -65,4 +83,7 @@ if (isset($_GET["req"]) && $_GET["req"] == "search_bar") {
     }
     echo json_encode($searchArray);
     exit;
+    /*------------*/
+// en-tant-quadministrateur-je-veux-gérer-les-tags
+/*------------*/
 }

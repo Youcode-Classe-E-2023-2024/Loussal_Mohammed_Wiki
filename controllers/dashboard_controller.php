@@ -12,7 +12,9 @@ if (isset($_POST['logout'])) {
     $logout = new User($_SESSION["user_id"]);
     $logout->logout();
 }
-
+/*------------*/
+// en-tant-quadministrateur-je-veux-gérer-les-tags
+/*------------*/
 $tags = Tag::getTags();
 
 if (isset($_GET["tag_id"])) {
@@ -44,7 +46,12 @@ if (isset($_POST["add_tag"])) {
 
     exit;
 }
-
+/*------------*/
+// en-tant-quadministrateur-je-veux-gérer-les-tags
+/*------------*/
+/*------------*/
+// en-tant-quadministrateur-je-veux-gérer-les-catégories
+/*------------*/
 $categories = category::getCategories();
 
 if (isset($_POST["add_category"])) {
@@ -86,6 +93,9 @@ $dataPoints = array(
     array("y" => $totalTags, "label" => "Tags"),
     array("y" => $totalWikis, "label" => "Wikis")
 );
+/*------------*/
+// en-tant-quadministrateur-je-veux-gérer-les-catégories
+/*------------*/
 
 
 
