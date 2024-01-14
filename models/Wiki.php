@@ -84,6 +84,15 @@ class Wiki
         return $result->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    
+    static function lasCategories()
+    {
+        global $db;
+        $result = $db->query("SELECT *
+            FROM category
+            ORDER BY created_at DESC
+            LIMIT 4");
+        return $result->fetchAll(PDO::FETCH_ASSOC);
+    }
+
     
 }
