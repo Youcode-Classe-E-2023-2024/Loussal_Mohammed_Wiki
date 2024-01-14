@@ -24,6 +24,17 @@ class User
         $this->username = $user['username'];
         $this->password = $user['password'];
     }
+    static function getUser($id)
+    {
+        global $db;
+        $stmt = $db->prepare("SELECT * FROM users WHERE user_id = :id");
+        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+        $stmt->execute();
 
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
+
+    
     
 }
